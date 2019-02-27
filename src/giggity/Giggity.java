@@ -35,7 +35,7 @@ public class Giggity {
         rhymingNouns.add("beachhouse");
         rhymingNouns.add("treehouse");
 
-        String noun, verb1, verb2, rhymingNoun1, rhymingNoun2;
+        String noun, verb1, verb2, verb3, rhymingNoun1, rhymingNoun2, rhymingNoun3;
         int randomNum;
 
         //get a random noun from the nouns ArrayList
@@ -52,6 +52,9 @@ public class Giggity {
         randomNum = (int)(Math.random() * verbs.size());
         verb2 = verbs.get(randomNum);
 
+        randomNum = (int)(Math.random() * verbs.size());
+        verb3 = verbs.get(randomNum);
+        
         //get the two rhyming nouns
         randomNum = (int)(Math.random() * rhymingNouns.size());
         rhymingNoun1 = rhymingNouns.get(randomNum);
@@ -59,10 +62,13 @@ public class Giggity {
 
         randomNum = (int)(Math.random() * rhymingNouns.size());
         rhymingNoun2 = rhymingNouns.get(randomNum);
+        
+        randomNum = (int)(Math.random() * rhymingNouns.size());
+        rhymingNoun3 = rhymingNouns.get(randomNum);
 
         //Display the poem
         System.out.println("The " + noun + " " + verb1 + " a " + rhymingNoun1 + "\n" +
-                "And then " + verb2 + " it in the " + rhymingNoun2);
+                "And then " + verb2 + " it in the " + rhymingNoun2 + "\n" + "But it " + verb3 + " a " + rhymingNoun3);
 
 
     }
