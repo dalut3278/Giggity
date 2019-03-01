@@ -1,6 +1,14 @@
-
+/*
+* David Lutelmowski
+* 3/01/19
+* Giggity
+*/
 package giggity;
 
+/**
+ *
+ * @author dalut3278
+ */
 import java.util.ArrayList;
 
 public class Giggity {
